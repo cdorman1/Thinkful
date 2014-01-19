@@ -13,7 +13,6 @@ meal_with_tax = meal + meal * tax
 tip_value = meal_with_tax * tip
 total = meal_with_tax + tip_value
 
-#total = meal + meal_tax + meal + 
 
 print "The base cost of your meal was $%s" % ("{0:.2f}".format(meal))
 print "You need to pay $%s for tax." % ("{0:.2f}".format(tax_value))
