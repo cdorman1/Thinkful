@@ -1,10 +1,13 @@
 #!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
+
 """
 Created on Fri Jan 03 17:33:32 2014
 
 @author: cdorman
 """
+
 meal = float(raw_input("Please provide the cost of your meal without tax or tip(i.e. 21.50): " )) 
 tax = float(raw_input("Please provide the amount of tax as a decimal(i.e. 0.15): " ))
 tip = float(raw_input("Please provide the amount of tip as a decimal(i.e. 0.15): " ))
