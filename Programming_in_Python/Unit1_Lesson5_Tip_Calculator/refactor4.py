@@ -12,12 +12,12 @@ from optparse import OptionParser
 
 parser = OptionParser()
 
-parser.add_option("-m", "--meal",  dest="first_arg", help="Please provide the cost of your meal without tax and tip",
+parser.add_option("-m", "--meal",  dest = "first_arg", help = "Please provide the cost of your meal without tax and tip",
                     type="float")
-parser.add_option("-t", "--tax", dest="second_arg", help="Please provide the tax amount as a decimal", 
+parser.add_option("-t", "--tax", dest = "second_arg", help = "Please provide the tax amount as a decimal", 
                     type="float")
-parser.add_option("-p", "--tip", dest="third_arg", help="Please provide the tip amount as a decimal",
-                    type="float", default=0.15)
+parser.add_option("-p", "--tip", dest = "third_arg", help = "Please provide the tip amount as a decimal",
+                    type = "float", default = 0.15)
 
 (options, args) = parser.parse_args()
 
