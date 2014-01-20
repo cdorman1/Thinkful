@@ -21,7 +21,12 @@ parser.add_option("-p", "--tip", dest="third_arg", help="Please provide the tip 
 
 (options, args) = parser.parse_args()
 
-
+if not (options.first_arg and options.second_arg and options.third_arg):
+    parser.error("""Please provide the cost of your meal as -m without tax or tip
+                provide the tax amount in decimal form as -t
+                provide the amount you would like to leave for a tip as -p Note: if there is no value
+                provided for tip a default of 0.15 will be used.
+                """)
 if not (options.first_arg):
     parser.error("Please provide the cost of your meal without tax and tip as -m")
 if not (options.second_arg):
